@@ -31,7 +31,7 @@ public class TestContactService {
 	@Test(expected = IllegalArgumentException.class)
 	public void testCreerContactNomExistePas() throws ContactExistException {
 		service.creerContact("Robert","0200000000");
-	//}
+	}
 
-
+		
 }
