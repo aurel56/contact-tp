@@ -31,15 +31,21 @@ public class ContactService {
 	}
 	
 	public void suprpimerContact(Contact contact) throws ContactExistException {
-		for(int i=0; i<contactDAO.getContacts().size(); i++) {
-			if(contactDAO.getContacts().get(i)==contact) {
-				contactDAO.getContacts().remove(i);
+		String nom = contact.getNom();
+		if(contactDAO.isContactExist(nom)) {
+			for(int i=0; i<contactDAO.getContacts().size(); i++) {
+				if(contactDAO.getContacts().get(i)==contact) {
+					contactDAO.getContacts().remove(i);
+				}
 			}
-			
 		}
 	}
 	
 	public void modifierContact(Contact contact) throws ContactExistException {
-		
+		for(int i=0; i<contactDAO.getContacts().size();i++) {
+			if(contactDAO.getContacts().get(i)==contact ) {
+				contactDAO.setContacts();
+			}
+		}
 	}
 }

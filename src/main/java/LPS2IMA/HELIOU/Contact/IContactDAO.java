@@ -15,6 +15,8 @@ public interface IContactDAO {
 	public ArrayList<Contact> getContacts();
 	
 	public void suprpimerContact(Contact contact);
+
+	public void setContacts();
 	
 	
 

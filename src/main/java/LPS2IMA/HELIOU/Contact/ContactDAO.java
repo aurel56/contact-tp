@@ -24,6 +24,10 @@ public class ContactDAO implements IContactDAO {
 	}
 
 	
+	public void setContacts(ArrayList<Contact> contacts) {
+		this.contacts = contacts;
+	}
+
 	public boolean isContactExist(String nom) {
 		Boolean exist = false;
 		for(Contact contact:contacts) {
@@ -35,6 +39,16 @@ public class ContactDAO implements IContactDAO {
 	}
 
 	public void recupererContact(Contact capture) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void suprpimerContact(Contact contact) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setContacts() {
 		// TODO Auto-generated method stub
 		
 	}
