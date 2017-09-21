@@ -22,6 +22,14 @@ public class Contact {
 	
 	
 	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
 	
 	
 	

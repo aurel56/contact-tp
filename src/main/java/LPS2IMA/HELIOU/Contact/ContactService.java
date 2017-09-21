@@ -41,10 +41,11 @@ public class ContactService {
 		}
 	}
 	
-	public void modifierContact(Contact contact) throws ContactExistException {
-		for(int i=0; i<contactDAO.getContacts().size();i++) {
-			if(contactDAO.getContacts().get(i)==contact ) {
-				contactDAO.setContacts();
+	public void modifierContact(Contact contactAModifier,String nom,String tel) {
+		for(int i=0;i<contactDAO.getContacts().size();i++) {
+			if(contactDAO.getContacts().get(i)==contactAModifier) {
+				contactDAO.getContacts().get(i).setNom(nom);
+				contactDAO.getContacts().get(i).setTelephone(tel);
 			}
 		}
 	}
