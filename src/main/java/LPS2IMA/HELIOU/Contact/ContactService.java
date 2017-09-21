@@ -45,7 +45,7 @@ public class ContactService {
 		for(int i=0;i<contactDAO.getContacts().size();i++) {
 			if(contactDAO.getContacts().get(i)==contactAModifier) {
 				contactDAO.getContacts().get(i).setNom(nom);
-				contactDAO.getContacts().get(i).setTelephone(tel);
+				contactDAO.getContacts().get(i).setTelephone(tel);  
 			}
 		}
 	}
