@@ -28,9 +28,9 @@ public class TestContactService {
 	public void testCreerContactNomTropLong() throws ContactExistException {
 		service.creerContact("Aaaaaaaaaaabbbbbbbbbllllllllllleeeeeeeeerrrrrrrrrrrttttttt","0200000000");
 	}
-	//@Test(expected = IllegalArgumentException.class)
-	//public void testCreerContactNomExistePas() throws ContactExistException {
-	//	service.creerContact("Ablbert","0200000000");
+	@Test(expected = IllegalArgumentException.class)
+	public void testCreerContactNomExistePas() throws ContactExistException {
+		service.creerContact("Robert","0200000000");
 	//}
 
 
